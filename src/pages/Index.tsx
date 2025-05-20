@@ -19,9 +19,9 @@ const Index = () => {
                 You're not alone. Let's check in with your emotions — gently. Track your moods, reflect on patterns, and nurture your mental well-being.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Link to="/auth?signup=true">
+                <Link to="/chat">
                   <Button size="lg" className="rounded-full px-8">
-                    Get Started
+                    Start Chatting
                   </Button>
                 </Link>
                 <Link to="#how-it-works">
@@ -53,7 +53,9 @@ const Index = () => {
                     <div className="h-12 w-12 rounded-full bg-calm-lilac flex items-center justify-center text-lg">😔</div>
                     <div className="h-12 w-12 rounded-full bg-calm-lavender flex items-center justify-center text-lg">😤</div>
                   </div>
-                  <Button className="w-full">Check In Now</Button>
+                  <Link to="/check-in">
+                    <Button className="w-full">Check In Now</Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -184,15 +186,15 @@ const Index = () => {
                 Start Your Emotional Wellness Journey
               </h2>
               <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-                Join thousands who are developing greater self-awareness through daily emotional check-ins with MindEase.
+                Begin developing greater self-awareness through daily emotional check-ins with MindEase.
               </p>
-              <Link to="/auth?signup=true">
+              <Link to="/chat">
                 <Button size="lg" className="rounded-full px-10">
-                  Sign Up — It's Free
+                  Start Chatting Now
                 </Button>
               </Link>
               <p className="text-sm text-muted-foreground mt-6">
-                No credit card required. Your privacy is our priority.
+                Your privacy is our priority.
               </p>
             </div>
           </div>

@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
@@ -27,15 +28,13 @@ const Header = () => {
           <Link to="/insights" className="text-muted-foreground hover:text-foreground transition-colors">
             Insights
           </Link>
+          <Link to="/chat" className="text-muted-foreground hover:text-foreground transition-colors">
+            Chat
+          </Link>
         </nav>
         
         <div className="flex items-center gap-3">
-          <Link to="/auth">
-            <Button variant="ghost">Log In</Button>
-          </Link>
-          <Link to="/auth?signup=true">
-            <Button>Sign Up</Button>
-          </Link>
+          <ThemeToggle />
         </div>
       </div>
     </header>
